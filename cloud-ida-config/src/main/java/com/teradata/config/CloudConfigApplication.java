@@ -17,9 +17,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @EnableDiscoveryClient
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class,DataSourceTransactionManagerAutoConfiguration.class, MybatisAutoConfiguration.class})
-public class CloudDockerConfigApplication {
+public class CloudConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudDockerConfigApplication.class, args);
+        SpringApplication.run(CloudConfigApplication.class, args);
     }
 }
