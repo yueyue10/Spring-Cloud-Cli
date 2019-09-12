@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.teradata.dao.PermissionMapper">
   <resultMap id="BaseResultMap" type="com.teradata.bean.po.Permission">
     <id column="permission_id" jdbcType="INTEGER" property="permissionId" />
@@ -13,7 +13,7 @@
     permission_id, permission_name, permission_url,permission_auth ,parent_permission_id, permission_lv
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from ida_permission
     where permission_id = #{permissionId,jdbcType=INTEGER}
@@ -89,7 +89,7 @@
     where permission_id = #{permissionId,jdbcType=INTEGER}
   </update>
 
-  <select id="listPermissionWithParName"  parameterType="com.teradata.bean.po.Permission" resultMap="BaseResultMap">
+  <select id="listPermissionWithParName" parameterType="com.teradata.bean.po.Permission" resultMap="BaseResultMap">
       SELECT  p1.permission_id, p1.permission_name, p1.permission_url, p1.parent_permission_id,p2.permission_name parent_permission_name, p1.permission_lv
       FROM  ida_permission p1
       LEFT JOIN  ida_permission p2 on p1.parent_permission_id= p2.permission_id
@@ -100,7 +100,7 @@
       </where>
   </select>
 
-  <select id="listPermission"  parameterType="com.teradata.bean.po.Permission" resultMap="BaseResultMap">
+  <select id="listPermission" parameterType="com.teradata.bean.po.Permission" resultMap="BaseResultMap">
       SELECT  p1.permission_id, p1.permission_name, p1.permission_url, p1.parent_permission_id, p1.permission_lv
       FROM  ida_permission p1
       <where>
