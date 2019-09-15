@@ -7,7 +7,7 @@ https://blog.csdn.net/u014271612/article/details/82866913
 
 项目架构图
 ---
-![image](https://github.com/xuyaohui/cloud-ida-cli/blob/master/images/%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![image](https://github.com/yueyue10/Spring-Cloud-Cli/blob/master/images/%E6%9E%B6%E6%9E%84%E5%9B%BE.png?raw=true)
 
 所使用相关技术：
 ---

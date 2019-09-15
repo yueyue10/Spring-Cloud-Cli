@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>com.teradata.web.controller.PermissionController</OriginalElement>
+  <OriginalElement>com.teradata.web.controller.CoreController</OriginalElement>
   <nodes />
   <notes />
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="568.5" y="322.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="588.5" y="322.0" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
